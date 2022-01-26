@@ -1,4 +1,4 @@
-package com.srw.learning.config;
+package com.srw.learning.handler;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;

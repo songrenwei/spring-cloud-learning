@@ -52,6 +52,7 @@
         <module>spring-cloud-alibaba/alibaba-nacos/nacos-service2</module>
         <module>spring-cloud-alibaba/alibaba-nacos/nacos-config-client</module>
         <module>spring-cloud-alibaba/alibaba-sentinel</module>
+        <module>spring-cloud-alibaba/alibaba-sentinel/sentinel-service1</module>
         <module>spring-cloud-alibaba/alibaba-seata</module>
     </modules>
 

@@ -1,6 +1,5 @@
-package com.srw.learning.config;
+package com.srw.learning.handler;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.gateway.filter.ratelimit.KeyResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

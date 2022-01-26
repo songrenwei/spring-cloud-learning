@@ -1,4 +1,4 @@
-package com.srw.learning.config;
+package com.srw.learning.handler;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
  * @Date: 2022/1/19 17:31
  */
 @Configuration
-public class RibbonConfig {
+public class RestTemplateConfig {
 
     @Bean
     @LoadBalanced

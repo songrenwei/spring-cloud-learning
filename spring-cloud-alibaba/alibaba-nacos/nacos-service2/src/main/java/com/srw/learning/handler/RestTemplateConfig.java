@@ -1,4 +1,4 @@
-package com.srw.learning.config;
+package com.srw.learning.handler;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;

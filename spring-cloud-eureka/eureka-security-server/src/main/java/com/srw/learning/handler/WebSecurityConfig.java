@@ -1,4 +1,4 @@
-package com.srw.learning.config;
+package com.srw.learning.handler;
 
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
