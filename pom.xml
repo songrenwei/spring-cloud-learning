@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.srw</groupId>
+    <artifactId>spring-cloud-learning</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>common</module>
+        <module>spring-cloud-eureka</module>
+        <module>spring-cloud-eureka/eureka-server</module>
+        <module>spring-cloud-eureka/eureka-security-server</module>
+        <module>spring-cloud-eureka/eureka-service1</module>
+        <module>spring-cloud-eureka/eureka-service2</module>
+        <module>spring-cloud-eureka/eureka-service3</module>
+        <module>spring-cloud-ribbon</module>
+        <module>spring-cloud-ribbon/ribbon-service1</module>
+        <module>spring-cloud-ribbon/ribbon-service2</module>
+        <module>spring-cloud-hystrix</module>
+        <module>spring-cloud-hystrix/hystrix-service1</module>
+        <module>spring-cloud-hystrix/hystrix-service2</module>
+        <module>spring-cloud-feign</module>
+        <module>spring-cloud-feign/feign-service1</module>
+        <module>spring-cloud-feign/feign-service2</module>
+        <module>spring-cloud-zuul</module>
+        <module>spring-cloud-zuul/zuul-proxy</module>
+        <module>spring-cloud-zuul/zuul-service1</module>
+        <module>spring-cloud-zuul/zuul-service2</module>
+        <module>spring-cloud-config</module>
+        <module>spring-cloud-config/config-server</module>
+        <module>spring-cloud-config/config-security-server</module>
+        <module>spring-cloud-config/config-client</module>
+        <module>spring-cloud-bus</module>
+        <module>spring-cloud-bus/bus-config-server</module>
+        <module>spring-cloud-bus/bus-config-client</module>
+        <module>spring-cloud-sleuth</module>
+        <module>spring-cloud-sleuth/sleuth-service1</module>
+        <module>spring-cloud-sleuth/sleuth-service2</module>
+        <module>spring-cloud-consul</module>
+        <module>spring-cloud-consul/consul-service1</module>
+        <module>spring-cloud-consul/consul-service2</module>
+        <module>spring-cloud-consul/consul-config-client</module>
+        <module>spring-cloud-gateway</module>
+        <module>spring-cloud-gateway/gateway-service</module>
+        <module>spring-cloud-gateway/gateway-service2</module>
+        <module>spring-cloud-gateway/gateway-service3</module>
+        <module>spring-cloud-alibaba</module>
+        <module>spring-cloud-alibaba/alibaba-nacos</module>
+        <module>spring-cloud-alibaba/alibaba-nacos/nacos-service1</module>
+        <module>spring-cloud-alibaba/alibaba-nacos/nacos-service2</module>
+        <module>spring-cloud-alibaba/alibaba-nacos/nacos-config-client</module>
+        <module>spring-cloud-alibaba/alibaba-sentinel</module>
+        <module>spring-cloud-alibaba/alibaba-seata</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <spring-boot.version>2.3.5.RELEASE</spring-boot.version>
+        <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
+        <spring-cloud-alibaba.version>2.2.6.RELEASE</spring-cloud-alibaba.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>

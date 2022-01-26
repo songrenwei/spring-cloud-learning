@@ -1,0 +1,14 @@
+server:
+  port: 8702
+spring:
+  application:
+    name: feign-service2
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+feign:
+  hystrix:
+    enabled: true #在Feign中开启Hystrix
