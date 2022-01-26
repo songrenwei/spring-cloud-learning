@@ -10,12 +10,4 @@
     <artifactId>alibaba-nacos</artifactId>
     <packaging>pom</packaging>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.srw</groupId>
-            <artifactId>common</artifactId>
-            <version>${parent.version}</version>
-        </dependency>
-    </dependencies>
-
 </project>
